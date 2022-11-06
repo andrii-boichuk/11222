@@ -209,11 +209,18 @@ body {
   transform: translateY(4px);
 }
 
+.patients-input {
+  margin-bottom: 20px;
+}
+
 .patiens-list-all {
   overflow-y: scroll;
   max-height: 80vh;
 } 
 .patiens-list-all-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #0f0;
   padding-left: 10px;
 }
@@ -223,4 +230,15 @@ body {
 }
 .patiens-list-all-phone {
 padding-left: 10px;
+}
+
+.patiens-list-all-item-btns {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  gap: 20px;
+  padding-right: 10px;
+}
+.patiens-list-all-item-btn:hover {
+  scale: 1.2;
 }
