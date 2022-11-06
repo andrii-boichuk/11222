@@ -1,14 +1,16 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::after, *::before {
-	box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 ul[class],
 ol[class] {
-	padding: 0;
+  padding: 0;
 }
 
 body,
@@ -27,36 +29,38 @@ figcaption,
 blockquote,
 dl,
 dd {
-	margin: 0
+  margin: 0
 }
 
 ul[class] {
-	list-style: none;
+  list-style: none;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 input,
 button,
 textarea,
 select {
-	font: inherit
+  font: inherit
 }
 
 body {
-	min-height: 100vh;
+  min-height: 100vh;
 }
 
 
 body {
   background-color: #1a1a1aff;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #0ff;
 }
 
@@ -78,13 +82,6 @@ body {
   justify-content: space-between;
 }
 
-.big-tabs_item {
-  display: none;
-}
-.big-tabs_item--active {
-  display: block;
-}
-
 .big-tabs_top {
   margin-left: 20%;
   display: flex;
@@ -92,12 +89,15 @@ body {
   justify-content: space-between;
   font-size: 1.8rem;
 }
+
 .big-tabs_top-item {
-  color:#fff;
+  color: #fff;
 }
+
 .big-tabs_top-item--active {
   color: #0f0;
 }
+
 .big-tabs_top-icons {
   display: flex;
   justify-content: space-between;
@@ -109,9 +109,9 @@ body {
 }
 
 .patient-info-item {
-  /* border-top: 1px solid #000; */
   border-bottom: 1px solid #fff;
 }
+
 
 .res {
   font-size: 1.4rem;
@@ -126,7 +126,9 @@ body {
 .lang-item {
   cursor: pointer;
 }
-.img-inline, .inline {
+
+.img-inline,
+.inline {
   display: inline-block;
 }
 
@@ -146,6 +148,7 @@ body {
 .stat_item {
   text-align: center;
 }
+
 .stat_item-res {
   font-size: 1.6rem;
   color: #0f0;
@@ -171,12 +174,53 @@ body {
 .job-ico svg g path {
   stroke: #fff !important;
 }
+
 .job-ico--active svg g path {
   stroke: #0f0 !important;
   /* fill: #0f0 !important; */
 }
+
 .footer {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
+}
+
+.footer svg path {
+  fill: #fff !important;
+}
+
+.footer-active svg path {
+  fill: #0f0 !important;
+}
+
+.patients-top {
+  margin: 0 auto 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.patients-input_img {
+  width: 1.4em;
+  height: 1.4em;
+  display: inline-block;
+  transform: translateY(4px);
+}
+
+.patiens-list-all {
+  overflow-y: scroll;
+  max-height: 80vh;
+} 
+.patiens-list-all-item {
+  border-bottom: 1px solid #0f0;
+  padding-left: 10px;
+}
+.patiens-list-all-name {
+  font-size: 1.6rem;
+  color: #0f0;
+}
+.patiens-list-all-phone {
+padding-left: 10px;
 }
