@@ -65,10 +65,19 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
   max-width: 800px;
   margin: 0 auto;
   padding: 10px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100vh;
+}
+
+.big-tabs_item {
+  overflow-y: scroll;
 }
 
 .patient-name {
@@ -89,6 +98,8 @@ body {
   justify-content: space-between;
   font-size: 1.8rem;
 }
+
+
 
 .big-tabs_top-item {
   color: #fff;
@@ -216,7 +227,8 @@ body {
 .patiens-list-all {
   overflow-y: scroll;
   max-height: 80vh;
-} 
+}
+
 .patiens-list-all-item {
   display: flex;
   justify-content: space-between;
@@ -224,21 +236,84 @@ body {
   border-bottom: 1px solid #0f0;
   padding-left: 10px;
 }
+
 .patiens-list-all-name {
   font-size: 1.6rem;
   color: #0f0;
 }
+
 .patiens-list-all-phone {
-padding-left: 10px;
+  padding-left: 10px;
 }
 
 .patiens-list-all-item-btns {
   display: flex;
   justify-content: end;
   align-items: baseline;
-  gap: 20px;
+  gap: 22px;
   padding-right: 10px;
 }
+
+.patiens-list-all-item-btn {
+  width: 18px;
+  height: 18px;
+}
+
 .patiens-list-all-item-btn:hover {
   scale: 1.2;
+}
+
+.this-visit {
+  text-align: center;
+}
+
+.this-visit_table-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.this-visit-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.this-visit-payment {
+  width: 160px;
+}
+
+.this-visit-payment-anamnez {
+  margin: 30px 0;
+  width: 80%;
+  height: 6rem;
+  resize: none;
+  padding: 10px;
+}
+
+.patient-log_item {
+  border-top: 1px solid #fff;
+  padding: 20px 10px;
+}
+.patient-log_item-top {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.patient-log_date {
+  margin-right: 60px;
+}
+
+.patient-log_payment {
+  margin-right: 50px;
+}
+
+.patient-log_describe {
+  font-size: 1.8rem;
+  color: #0f0;
+}
+
+.patient-log_payment-zero {
+  color: #f00;
 }

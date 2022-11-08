@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="top">
+      <div class="patient-top">
+        <div class="patient-top-left">
+          <span class="patient-name">Потоцик Александр</span>
+          <a class="user-tel" href="tel:+380666488763">066-648-87-63</a>
+        </div>
+        <div class="patient-top-img">
+          <a href="#">
+            <img src="img/related.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="big-tabs_top">
+        <a class="big-tabs_top-item big-tabs_top-item--active" href="#">
+          Общее
+        </a>
+        <a class="big-tabs_top-item" href="anamnez.html">
+          Анамнез
+        </a>
+        <div class="big-tabs_top-icons">
+          <div class="big-tabs_top-icon">
+            <a href="#">
+              <img src="img/timetable.svg" alt="">
+            </a>
+          </div>
+          <div class="big-tabs_top-icon">
+            <a href="#">
+              <img src="img/img_plus.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="big-tabs_item  big-tabs_item--active">
+      <div class="patient-info">
+        <div class="stat patient-info-item">
+
+          <div class="stat-content">
+            <div class="stat_item">
+              <div class="stat_subtitle">визитов</div>
+              <span class="stat_item-res">15</span>
+            </div>
+            <div class="stat_item">
+              <div class="stat_subtitle">курс:</div>
+              <span class="stat_item-res">5</span>
+            </div>
+            <div class="stat_item">
+              <div class="stat_subtitle">не явки</div>
+              <span class="stat_item-res">0</span>
+            </div>
+            <div class="stat_item">
+              <div class="stat_subtitle">отмени</div>
+              <span class="stat_item-res">2</span>
+            </div>
+            <div class="stat_item">
+              <div class="stat_subtitle">желательная периодичность</div>
+              <span class="stat_item-res">неделя</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="patient-info-item plan-visit">
+          <a class="plan-visit-link" href="#">
+            Запланировать визит +
+          </a>
+        </div>
+
+        <div class="patient-info-item this-visit">
+          <div class="this-visit_table-header">
+            <p>Текущий визит:</p>
+            <p>2022.12.03 - 14:00</p>
+            <p>Оплата</p>
+          </div>
+          <div class="this-visit-btns">
+            <a href="#">
+              <img src="img/scam.svg" alt="cancel">
+            </a>
+            <a href="#">
+              <img src="img/cancellation.svg" alt="cancellation">
+            </a>
+            <a href="#">
+              <img src="img/redefinition.svg" alt="redefinition">
+            </a>
+            <input class="this-visit-payment" type="number">
+            <select name="paymant" id="this-visit-select-payment">
+              <option selected="selected" disabled="disabled">сума</option>
+              <option value="500">500</option>
+              <option value="900">900</option>
+              <option value="1400">1400</option>
+              <option value="2200">2200</option>
+            </select>
+          </div>
+          <textarea class="this-visit-payment-anamnez" type="text" placeholder="Введите анамнез"></textarea>
+        </div>
+
+
+        <div class="patient-log">
+          <div class="patient-log_item">
+            <div class="patient-log_item-top">
+              <div class="patient-log_date">
+                12.03.2022
+              </div>
+              <div class="patient-log_payment">
+                0
+              </div>
+              <div class="patient-log_comment">
+                обещал заплатить в следующий раз
+              </div>
+            </div>
+            <div class="patient-log_describe">
+              Прошло обострение справа. слева 50% осталось
+            </div>
+          </div>
+
+          <div class="patient-log_item">
+            <div class="patient-log_item-top">
+              <div class="patient-log_date">
+                13.03.2022
+              </div>
+              <div class="patient-log_payment">
+                500
+              </div>
+              <div class="patient-log_comment">
+                
+              </div>
+            </div>
+            <div class="patient-log_describe">
+
+            </div>
+          </div>
+
+          <div class="patient-log_item">
+            <div class="patient-log_item-top">
+              <div class="patient-log_date">
+                13.03.2022
+              </div>
+              <div class="patient-log_payment">
+                0
+              </div>
+              <div class="patient-log_comment">
+                
+              </div>
+            </div>
+            <div class="patient-log_describe">
+
+            </div>
+          </div>
+
+          <div class="patient-log_item">
+            <div class="patient-log_item-top">
+              <div class="patient-log_date">
+                13.03.2022
+              </div>
+              <div class="patient-log_payment">
+                0
+              </div>
+              <div class="patient-log_comment">
+                
+              </div>
+            </div>
+            <div class="patient-log_describe">
+              После долгого положения сидя дискомфорт в 
+              области поясницы. Если не правильно 
+              поспать болит шея. 
+            </div>
+          </div>
+
+          <div class="patient-log_item">
+            <div class="patient-log_item-top">
+              <div class="patient-log_date">
+                13.03.2022
+              </div>
+              <div class="patient-log_payment">
+                1000
+              </div>
+              <div class="patient-log_comment">
+                
+              </div>
+            </div>
+            <div class="patient-log_describe">
+              Обострения после 2 процедуры, боль перешла на другую сторону
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <a href="patientslist.html" class="footer_item">
+        <img src="img/search.svg" alt="пошук">
+      </a>
+      <a href="add_edit.html" class="footer_item">
+        <img src="img/entry.svg" alt="entry">
+      </a>
+      <a href="index.html" class="footer_item">
+        <img src="img/person.svg" alt="пацієнт">
+      </a>
+      <a href="#" class="footer_item">
+        <img src="img/stata.svg" alt="статистика">
+      </a>
+      <a href="#" class="footer_item">
+        <img src="img/calendar.svg" alt="календар">
+      </a>
+    </footer>
+  </div>
+</body>
+
+
+<script src="js/script.js"></script>
+
+</html>

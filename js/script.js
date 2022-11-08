@@ -16,3 +16,12 @@ jobIcoList.forEach(item => {
   });
 });
 
+const paymentList = document.querySelectorAll('.patient-log_payment');
+paymentList.forEach(item => {
+  if (item.innerHTML == 0) {
+    console.log('0');
+    item.parentElement.classList.add('patient-log_payment-zero');
+  }
+  item.innerHTML += 'грн';
+})
+
