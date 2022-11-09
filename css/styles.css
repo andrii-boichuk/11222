@@ -55,6 +55,7 @@ select {
 
 body {
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -67,13 +68,18 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: space-between;
   /* align-items: center; */
   max-width: 800px;
   margin: 0 auto;
   padding: 10px;
   /* min-height: 100vh; */
   height: 100vh;
+}
+
+.top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff; 
 }
 
 .big-tabs_item {
@@ -107,6 +113,10 @@ body {
 
 .big-tabs_top-item--active {
   color: #0f0;
+}
+
+.big-tabs_top-item--active a svg path {
+  fill: #0f0 !important;
 }
 
 .big-tabs_top-icons {
@@ -205,6 +215,11 @@ body {
   fill: #0f0 !important;
 }
 
+.footer_item img{
+  width: 85px;
+  height: 60px;
+}
+
 .patients-top {
   margin: 0 auto 3em;
   display: flex;
@@ -247,6 +262,11 @@ body {
 }
 
 .patiens-list-all-item-btns {
+  display: none;
+}
+
+
+.patiens-list-all-item-btns--visible .patiens-list-all-item-btns {
   display: flex;
   justify-content: end;
   align-items: baseline;
@@ -263,6 +283,20 @@ body {
   scale: 1.2;
 }
 
+
+.plan-visit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 116px;
+}
+
+.plan-visit-link {
+  font-size: 1.8rem;
+  color: #0f0;
+}
+
+
 .this-visit {
   text-align: center;
 }
@@ -278,6 +312,8 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+
 
 .this-visit-payment {
   width: 160px;
@@ -317,3 +353,30 @@ body {
 .patient-log_payment-zero {
   color: #f00;
 }
+
+.form-add_radio-lang p {
+  color:#0f0;
+  font-size: 1.4rem;
+}
+
+.form-add_radio-lang {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.form-add_radio-lang label {
+  position: relative;
+}
+
+.form-add_radio-lang label input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-add_radio-lang-item {
+  margin: 0 20px;
+}
+
+

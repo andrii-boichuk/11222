@@ -10,7 +10,7 @@ langlist.forEach(item => {
 
 const jobIcoList = document.querySelectorAll('.job-ico');
 jobIcoList.forEach(item => {
-  item.addEventListener('click', (e) => {
+  item.addEventListener('click', () => {
     jobIcoList.forEach(el => { el.classList.remove('job-ico--active'); });
     item.classList.add('job-ico--active');
   });
@@ -23,5 +23,52 @@ paymentList.forEach(item => {
     item.parentElement.classList.add('patient-log_payment-zero');
   }
   item.innerHTML += 'грн';
-})
+});
 
+const patiensListAllItem = document.querySelectorAll('.patiens-list-all-item');
+patiensListAllItem.forEach(item => {
+  item.addEventListener('click', () => {
+    patiensListAllItem.forEach(el => {
+      el.classList.remove('patiens-list-all-item-btns--visible');
+    });
+    item.classList.add('patiens-list-all-item-btns--visible');
+  });
+});
+
+
+
+const formAddRadioLang = document.querySelector('.form-add_radio-lang');
+formAddRadioLang.addEventListener('click', () => {
+  const add_radio_lang_ru = document.querySelector('#radio-lang-ru');
+  const add_radio_lang_x = document.querySelector('#radio-lang-x');
+  const add_radio_lang_UA = document.querySelector('#radio-lang-UA');
+  if (add_radio_lang_ru.checked) {
+    console.log('checked');
+    add_radio_lang_ru.parentElement.style = 'color: #0f0';
+    add_radio_lang_x.parentElement.style = 'color: #fff';
+    add_radio_lang_UA.parentElement.style = 'color: #fff';
+  }
+
+  if (add_radio_lang_x.checked) {
+    console.log('checked');
+    add_radio_lang_ru.parentElement.style = 'color: #fff';
+    add_radio_lang_x.parentElement.style = 'color: #0f0';
+    add_radio_lang_UA.parentElement.style = 'color: #fff';
+  }
+
+  if (add_radio_lang_UA.checked) {
+    console.log('checked');
+    add_radio_lang_ru.parentElement.style = 'color: #fff';
+    add_radio_lang_x.parentElement.style = 'color: #fff';
+    add_radio_lang_UA.parentElement.style = 'color: #0f0';
+  }
+
+});
+
+
+
+
+
+
+// console.log(add_radio_lang_ru.checked);
+// .parentElement.style='color: #f00';
