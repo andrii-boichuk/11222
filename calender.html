@@ -114,14 +114,21 @@
             <a href="#">
               <img src="img/redefinition.svg" alt="redefinition">
             </a>
-            <input class="this-visit-payment" type="number">
-            <select name="paymant" id="this-visit-select-payment">
+            <input class="this-visit-payment" type="number" list="payment-list">
+            <datalist id="payment-list">
+              <option value="500">
+              <option value="800">
+              <option value="1100">
+              <option value="2200">
+            </datalist>
+
+            <!-- <select name="paymant" id="this-visit-select-payment">
               <option selected="selected" disabled="disabled">сума</option>
               <option value="500">500</option>
               <option value="900">900</option>
               <option value="1400">1400</option>
               <option value="2200">2200</option>
-            </select>
+            </select> -->
           </div>
           <textarea class="this-visit-payment-anamnez" type="text" placeholder="Введите анамнез"></textarea>
         </div>
