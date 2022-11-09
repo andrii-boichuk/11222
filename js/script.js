@@ -48,27 +48,32 @@ formAddRadioLang.addEventListener('click', () => {
     add_radio_lang_x.parentElement.style = 'color: #fff';
     add_radio_lang_UA.parentElement.style = 'color: #fff';
   }
-
   if (add_radio_lang_x.checked) {
     console.log('checked');
     add_radio_lang_ru.parentElement.style = 'color: #fff';
     add_radio_lang_x.parentElement.style = 'color: #0f0';
     add_radio_lang_UA.parentElement.style = 'color: #fff';
   }
-
   if (add_radio_lang_UA.checked) {
     console.log('checked');
     add_radio_lang_ru.parentElement.style = 'color: #fff';
     add_radio_lang_x.parentElement.style = 'color: #fff';
     add_radio_lang_UA.parentElement.style = 'color: #0f0';
   }
-
 });
 
 
 
+// const formAddRadioPA = document.querySelector('.form-add_radio-p-a');
+// const radioPAChair = document.querySelector('#radio-p-a-chair');
+// const radioPAWalk = document.querySelector('#radio-p-a-walkr');
+// const radioPABarbell = document.querySelector('#radio-p-a-barbell');
+  
+// formAddRadioPA.addEventListener('click', (e) => {
+//   if (radioPAChair.checked) {
+
+//   }
+// })
 
 
 
-// console.log(add_radio_lang_ru.checked);
-// .parentElement.style='color: #f00';

@@ -53,6 +53,16 @@ select {
   font: inherit
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
 body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -241,7 +251,7 @@ body {
 
 .patiens-list-all {
   overflow-y: scroll;
-  max-height: 80vh;
+  max-height: 60vh;
 }
 
 .patiens-list-all-item {
@@ -380,3 +390,58 @@ body {
 }
 
 
+.form-add_input-line {
+  border-top: 1px solid #fff;
+  padding: 10px 10px;
+}
+.form-add_input-line:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.form-add_input-line input {
+  background-color: inherit;
+  color:#0ff;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-add_input-line input:focus-visible {
+  outline: none;
+}
+
+.form-add_h-w-head,
+.form-add_h-w-data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-add_h-w-data input {
+  width: 100px;
+  text-align: center;
+}
+
+
+.form-add_radio-p-a-item  input:checked + img {
+  background-color: #0f0 !important;
+  /* background: red; */
+
+}
+
+.form-add_radio-p-a-item input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  x: 0;
+  y: 0;
+  visibility: hidden;
+}
+
+
+.form-add_radio-p-a {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
